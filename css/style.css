@@ -22,10 +22,14 @@ body{
     background: gray;
     border-radius: 25px;
     margin: auto;
-    width: 250%;
+    width: 200%;
     height: 248px;
     font-family: fantasy;
     font-size:1em;
+}
+.botonExcel10:hover{
+    background: : gray;
+    opacity: .8;
 }
 #reporte {
     margin-top: 100px;
