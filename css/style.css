@@ -17,7 +17,16 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
+.botonExcel10{
+    color: aliceblue;
+    background: gray;
+    border-radius: 25px;
+    margin: auto;
+    width: 250%;
+    height: 248px;
+    font-family: fantasy;
+    font-size:1em;
+}
 #reporte {
     margin-top: 100px;
     display:inline-flex;    

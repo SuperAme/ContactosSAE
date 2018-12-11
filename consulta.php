@@ -1,5 +1,6 @@
 <?php
-    $host = 'localhost:C:\paso\FDB\SAE70EMPRE03PASS.fdb';
+    $host = 'localhost:C:\DB\SAE70EMPRE03.FDB';
+    #$host = 'localhost:C:\paso\FDB\SAE70EMPRE03PASS.fdb';
     $nombre_usuario = "sysdba";
     $password = "masterkey";
     $gestor_db = ibase_connect($host, $nombre_usuario, $password);

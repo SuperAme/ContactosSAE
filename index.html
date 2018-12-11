@@ -12,6 +12,7 @@
     <link rel="stylesheet"  href="css/style.css">
     <link rel="stylesheet" type="text/css" href="DataTables/datatables.css">
     <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/consult.js"></script>
     <script type="text/javascript" charset="utf8" src="DataTables/datatables.js"></script>
     <script language="javascript">
         $(document).ready(function() {
@@ -53,6 +54,12 @@
        </form>      
        </div>
        <div id="reporte">
+       <form action="consulta2.php" method="post" target="_blank" id="FormularioExportacion">
+           <button class="botonExcel10">Contactos</button>
+           <input type="hidden" id="datos_a_enviar4" name="datos_a_enviar4" />
+       </form>      
+       </div>
+       <div id="reporte">
        <form action="consulta_totales.php" method="post" target="_blank" id="ContactosTotales">       
                <button class="botonExcel1">Contactos Tot.</button>
                <input type="hidden" id="datos_a_enviar1" name="datos_a_enviar1" />
@@ -65,7 +72,7 @@
        </form>
        </div>
        <div id="reporte">       
-       <form action="#" method="post" id="#">       
+       <form action="consulta_n.php" method="post" id="#">       
                  <button class="botonExcel3">Contactos NOI</button>
                  <input type="hidden" id="datos_a_enviar" name="datos_a_enviar" />
        </form>
