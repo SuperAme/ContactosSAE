@@ -10,7 +10,8 @@
     header("Content-Disposition: attachment; filename=contactos_totales.xls");
     header("Pragma: no-cache");
     header("Expires: 0");
-
+    echo "\xEF\xBB\xBF"; //UTF-8 BOM
+    echo $out;
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname, $port);
     mysqli_set_charset($conn,"utf8");

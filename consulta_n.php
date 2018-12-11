@@ -8,6 +8,8 @@
     header("Content-Disposition: attachment; filename=contactos_NOI.xls");
     header("Pragma: no-cache");
     header("Expires: 0");
+    echo "\xEF\xBB\xBF"; //UTF-8 BOM
+    echo $out;
 
     if($gestor_db == true){
         $consulta = "SELECT CON.CVE_CLIE,CON.NOMBRE AS CONTACTO,CLI.NOMBRE AS EMPRESA,CON.EMAIL,CLI.TELEFONO,SIS.CAMPLIB13 AS SISTEMA,CLI.STATUS FROM CONTAC03 CON

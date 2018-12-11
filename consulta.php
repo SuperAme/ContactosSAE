@@ -1,6 +1,6 @@
 <?php
-    #$host = 'localhost:C:\DB\SAE70EMPRE03.FDB';
-    $host = 'localhost:C:\paso\FDB\SAE70EMPRE03PASS.fdb';
+    $host = 'localhost:C:\DB\SAE70EMPRE03.FDB';
+    #$host = 'localhost:C:\paso\FDB\SAE70EMPRE03PASS.fdb;charset=utf8;';
     $nombre_usuario = "sysdba";
     $password = "masterkey";
     $gestor_db = ibase_connect($host, $nombre_usuario, $password);
@@ -8,6 +8,8 @@
     header("Content-Disposition: attachment; filename=contactos_SAE.xls");
     header("Pragma: no-cache");
     header("Expires: 0");
+    echo "\xEF\xBB\xBF"; //UTF-8 BOM
+    echo $out;
 
     if($gestor_db == true){
         $consulta = "SELECT CON.CVE_CLIE,CON.NOMBRE AS CONTACTO,CLI.NOMBRE AS EMPRESA,CON.EMAIL,CLI.TELEFONO,SIS.CAMPLIB11 AS SISTEMA,CLI.STATUS FROM CONTAC03 CON
@@ -16,7 +18,6 @@
                         WHERE SIS.CAMPLIB11 LIKE 'S%'
                         ORDER BY CON.CVE_CLIE ASC";
         $gestor_sent = ibase_query($gestor_db, $consulta);
-    
         $table = "<table width='50%' border='1' cellpadding='10' cellspacing='0' bordercolor='#666666' id='Exportar_a_Excel' style='border-collapse:collapse;' >\n
                     <thead>\n <tr>\n";
         $coln = ibase_num_fields($gestor_sent);
