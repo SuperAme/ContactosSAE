@@ -4,10 +4,12 @@
     $nombre_usuario = "sysdba";
     $password = "masterkey";
     $gestor_db = ibase_connect($host, $nombre_usuario, $password);
-    header('Content-type: application/vnd.ms-excel');
+    header('Content-type: application/vnd.ms-excel');   
     header("Content-Disposition: attachment; filename=contactos_COI.xls");
     header("Pragma: no-cache");
     header("Expires: 0");
+    echo "\xEF\xBB\xBF"; //UTF-8 BOM
+    echo $out;
 
     if($gestor_db == true){
         $consulta = "SELECT CON.CVE_CLIE,CON.NOMBRE AS CONTACTO,CLI.NOMBRE AS EMPRESA,CON.EMAIL,CLI.TELEFONO,SIS.CAMPLIB12 AS SISTEMA,CLI.STATUS FROM CONTAC03 CON
