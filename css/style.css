@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+table{
+    border: 2px black solid;
+}
+thead,tr,td,th{
+    color: black;    
+    text-align: center;
+}
+body{
+   // background-image: url(../img/logo_2.jpg);
+}
+
+#container{    
+    height: auto;
+/*    margin-top: 150px;*/    
+    display: flex;
+    justify-content: space-between;
+}
+
+#reporte {
+    margin-top: 100px;
+    display:inline-flex;    
+    width: 250px;
+    height: 250px;
+}
+.botonExcel{
+    color: aliceblue;
+    background: gray;
+    border-radius: 25px;
+    margin: auto;
+    width: 200%;
+    height: 248px;
+    font-family: fantasy;
+    font-size:1em;
+}
+.botonExcel:hover{
+    background: gray;
+    opacity: .8;
+}
+.botonExcel1{
+    color: aliceblue;
+    background: gray;
+    border-radius: 25px;
+    margin: auto;
+    width: 200%;
+    height: 248px;
+    font-family: fantasy;
+    font-size:1em;
+}
+.botonExcel1:hover{
+    background: gray;
+    opacity: .8;
+}
+.botonExcel2{
+    color: aliceblue;
+    background: gray;
+    border-radius: 25px;
+    margin: auto;
+    width: 200%;
+    height: 248px;
+    font-family: fantasy;
+    font-size:1em;
+}
+.botonExcel2:hover{
+    background: gray;
+    opacity: .8;
+}
+.botonExcel3{
+    color: aliceblue;
+    background: gray;
+    border-radius: 25px;
+    margin: auto;
+    width: 200%;
+    height: 248px;
+    font-family: fantasy;
+    font-size:1em;
+}
+.botonExcel3:hover{
+    background: gray;
+    opacity: .8;
+}
+
+
+@media screen and (max-width:930px){
+    #container{
+        flex-direction: column;
+    }
+    #reporte{
+        width: 250px;
+        height: 250px;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
