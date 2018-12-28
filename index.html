@@ -14,7 +14,7 @@
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/consult.js"></script>
     <script type="text/javascript" charset="utf8" src="DataTables/datatables.js"></script>
-    <script language="javascript">
+    <!---<script language="javascript">
         $(document).ready(function() {
             $(".botonExcel").click(function(event) {
                 $("#datos_a_enviar").val( $("<div>").append( $("#Exportar_a_Excel").eq(0).clone()).html());
@@ -29,7 +29,7 @@
                 $("#FormularioExportacion").submit();
                 });*/
         });
-    </script>
+    </script>-->
 </head>    
 <body>
    <div id="container">
@@ -47,43 +47,51 @@
                </div>           
            </div>        
        </nav>
-       <div id="reporte">
-       <form action="consulta.php" method="post" target="_blank" id="FormularioExportacion">
-           <button class="botonExcel">Contactos SAE</button>
-           <input type="hidden" id="datos_a_enviar" name="datos_a_enviar" />
-       </form>      
-       </div>
-       <div id="reporte">
-       <form action="consulta2.php" method="post" target="_blank" id="FormularioExportacion">
-           <button class="botonExcel10">Contactos COI</button>
-           <input type="hidden" id="datos_a_enviar4" name="datos_a_enviar4" />
-       </form>      
-       </div>
-       <div id="reporte">
-       <form action="consulta_totales.php" method="post" target="_blank" id="ContactosTotales">       
-               <button class="botonExcel1">Contactos Tot.</button>
-               <input type="hidden" id="datos_a_enviar1" name="datos_a_enviar1" />
-       </form>
-       </div>
-       <div id="reporte">       
-       <form action="consultaLeads.php" method="post" target="_blank" id="LeadsTotales">       
-                 <button class="botonExcel2">LEADS Totales</button>
-                 <input type="hidden" id="datos_a_enviar2" name="datos_a_enviar2" />
-       </form>
-       </div>
-       <div id="reporte">       
-       <form action="consulta_n.php" method="post" id="#">       
-                 <button class="botonExcel3">Contactos NOI</button>
-                 <input type="hidden" id="datos_a_enviar" name="datos_a_enviar" />
-       </form>
-       </div>
+       
+       
       <!-- <div id="reporte">
        <form action="consulta.php" method="post" target="_blank" id="FormularioExportacion">
            <button class="botonExcel">Contactos NOI</button>
            <input type="hidden" id="datos_a_enviar" name="datos_a_enviar" />
        </form>      
-       </div> -->              
+       </div> -->               
    </div>
+   <div id = "tabla">
+   <table class = "tabla_botones">
+      <tr>
+        <td>
+       <form action="consulta.php" method="post" target="_blank" id="FormularioExportacion">
+           <input type="hidden" id="datos_a_enviar" name="datos_a_enviar" />
+           <button class="botonExcel">Contactos SAE</button>
+     </form>
+   </td>
+         <td>
+           <form action="consulta2.php" method="post" target="_blank" id="FormularioExportacion">
+           <button class="botonExcel10">Contactos COI</button>
+           <input type="hidden" id="datos_a_enviar4" name="datos_a_enviar4" />
+       </form>
+         </td>
+         <td>
+           <form action="consulta_totales.php" method="post" target="_blank" id="ContactosTotales">       
+               <button class="botonExcel1">Contactos Tot.</button>
+               <input type="hidden" id="datos_a_enviar1" name="datos_a_enviar1" />
+       </form>
+         </td>
+         <td>
+           <form action="consultaLeads.php" method="post" target="_blank" id="LeadsTotales">       
+                 <button class="botonExcel2">LEADS Totales</button>
+                 <input type="hidden" id="datos_a_enviar2" name="datos_a_enviar2" />
+       </form>
+         </td>
+         <td>
+           <form action="consulta_n.php" method="post" id="#">       
+                 <button class="botonExcel3">Contactos NOI</button>
+                 <input type="hidden" id="datos_a_enviar" name="datos_a_enviar" />
+       </form>
+         </td>
+       </tr>
+       </table>  
+     </div>
 </body>
 <script>
     $(document).ready( function () {

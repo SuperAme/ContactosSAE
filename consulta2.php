@@ -1,11 +1,11 @@
 <?php
-    #$host = 'localhost:C:\DB\SAE70EMPRE03.FDB';
-    $host = 'localhost:C:\paso\FDB\SAE70EMPRE03PASS.fdb';
+    $host = 'localhost:C:\DB\SAE70EMPRE03.FDB';
+    #$host = 'localhost:C:\paso\FDB\SAE70EMPRE03PASS.fdb';
     $nombre_usuario = "sysdba";
     $password = "masterkey";
     $gestor_db = ibase_connect($host, $nombre_usuario, $password);
-    header('Content-type: application/vnd.ms-excel');   
-    header("Content-Disposition: attachment; filename=contactos_COI.xls");
+    header('Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');   
+    header("Content-Disposition: attachment; filename=contactos_COI.xlsx");
     header("Pragma: no-cache");
     header("Expires: 0");
     echo "\xEF\xBB\xBF"; //UTF-8 BOM

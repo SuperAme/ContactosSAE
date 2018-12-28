@@ -3,7 +3,7 @@
     $nombre_usuario = "sysdba";
     $password = "masterkey";
     $gestor_db = ibase_connect($host, $nombre_usuario, $password);
-    header('Content-type: application/vnd.ms-excel');
+    header('Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
     header("Content-Disposition: attachment; filename=contactos_totales.xls");
     header("Pragma: no-cache");
     header("Expires: 0"); 

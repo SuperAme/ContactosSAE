@@ -10,14 +10,25 @@ thead,tr,td,th{
 body{
    // background-image: url(../img/logo_2.jpg);
 }
-
-#container{    
+#tabla{
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 50%;
+}
+td{
+    margin: 10px;
+}
+form{
+    margin:10px;
+}
+/*#container{    
     height: auto;
-/*    margin-top: 150px;*/    
+       margin-top: 150px;
     display: flex;
     justify-content: space-between;
-}
-.botonExcel10{
+}*/
+/*.botonExcel10{
     color: aliceblue;
     background: gray;
     border-radius: 25px;
@@ -26,18 +37,15 @@ body{
     height: 248px;
     font-family: fantasy;
     font-size:1em;
-}
-.botonExcel10:hover{
+}*/
+/*.botonExcel10:hover{
     background: : gray;
     opacity: .8;
-}
+}*/
 #reporte {
     margin-top: 100px;
-    display:inline-flex;    
-    width: 250px;
-    height: 250px;
 }
-.botonExcel{
+/*.botonExcel{
     color: aliceblue;
     background: gray;
     border-radius: 25px;
@@ -46,12 +54,12 @@ body{
     height: 248px;
     font-family: fantasy;
     font-size:1em;
-}
+}*/
 .botonExcel:hover{
     background: gray;
     opacity: .8;
 }
-.botonExcel1{
+/*.botonExcel1{
     color: aliceblue;
     background: gray;
     border-radius: 25px;
@@ -60,12 +68,12 @@ body{
     height: 248px;
     font-family: fantasy;
     font-size:1em;
-}
+}*/
 .botonExcel1:hover{
     background: gray;
     opacity: .8;
 }
-.botonExcel2{
+/*.botonExcel2{
     color: aliceblue;
     background: gray;
     border-radius: 25px;
@@ -74,12 +82,12 @@ body{
     height: 248px;
     font-family: fantasy;
     font-size:1em;
-}
+}*/
 .botonExcel2:hover{
     background: gray;
     opacity: .8;
 }
-.botonExcel3{
+/*.botonExcel3{
     color: aliceblue;
     background: gray;
     border-radius: 25px;
@@ -88,7 +96,7 @@ body{
     height: 248px;
     font-family: fantasy;
     font-size:1em;
-}
+}*/
 .botonExcel3:hover{
     background: gray;
     opacity: .8;

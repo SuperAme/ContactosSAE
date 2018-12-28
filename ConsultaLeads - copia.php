@@ -6,7 +6,7 @@
     //$port = 3306;
     $port = 33307;
 
-    header('Content-type: application/vnd.ms-excel');
+    header('Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
     header("Content-Disposition: attachment; filename=contactos_totales.xls");
     header("Pragma: no-cache");
     header("Expires: 0");
