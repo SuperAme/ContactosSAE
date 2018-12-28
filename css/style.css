@@ -12,7 +12,7 @@ body{
 }
 #tabla{
     margin-top: 150px;
-    margin-left: 100px;
+    margin-left: 350px;
     margin-right: 100px;
     width: 50%;
 }
@@ -38,10 +38,6 @@ form{
     font-family: fantasy;
     font-size:1em;
 }*/
-/*.botonExcel10:hover{
-    background: : gray;
-    opacity: .8;
-}*/
 #reporte {
     margin-top: 100px;
 }
@@ -57,6 +53,10 @@ form{
 }*/
 .botonExcel:hover{
     background: gray;
+    opacity: .8;
+}
+.botonExcel10:hover{
+    background: : gray;
     opacity: .8;
 }
 /*.botonExcel1{
